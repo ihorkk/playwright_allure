@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Nov 05 08:10:51 GMT 2022","Sat Nov 05 08:10:54 GMT 2022","3422","chromium","test_case_4.spec.js","","","","should make screenshot of books",""
+"passed","Sat Nov 05 08:09:54 GMT 2022","Sat Nov 05 08:10:03 GMT 2022","8716","chromium","test_case_1.spec.js","","","","should sign up with valid credentials",""
+"passed","Sat Nov 05 08:10:39 GMT 2022","Sat Nov 05 08:10:43 GMT 2022","4034","chromium","test_case_3.spec.js","","","","should check search input",""
+"passed","Sat Nov 05 08:10:27 GMT 2022","Sat Nov 05 08:10:32 GMT 2022","5179","chromium","test_case_2.spec.js","","","","should sign in with valid credentials",""
+"passed","Sat Nov 05 08:11:02 GMT 2022","Sat Nov 05 08:11:11 GMT 2022","9206","chromium","test_case_5.spec.js","","","","should check main menu buttons",""
