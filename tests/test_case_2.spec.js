@@ -1,11 +1,15 @@
 const { test, expect } = require('@playwright/test');
+const { MainPage } = require('../pages/mainpage');
+const { LoginPage } = require('../pages/loginpage');
+const { UserPage } = require('../pages/userpage');
 
 
 test('should sign in with valid credentials', async ({ page }) => {
-  await page.goto('https://www.redmine.org');
-  await page.locator('a[class=login]').click();
-  await page.locator('#username').fill('luxequality00');
-  await page.locator('#password').fill('Random123');
-  await page.locator('input[type=submit]').click();
-  await expect(page.locator('#account')).toBeVisible();
+    const mainpage = new MainPage(page);
+    const loginpage = new LoginPage(page);
+    const userpage = new UserPage(page);
+    await mainpage.goto();
+    await mainpage.loginButtonClick();
+    await loginpage.login("luxequality00", "Random123");
+    await expect(userpage.usermenu).toBeVisible();
 });

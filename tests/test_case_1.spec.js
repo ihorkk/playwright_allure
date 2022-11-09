@@ -1,15 +1,15 @@
 const { test, expect } = require('@playwright/test');
+const { MainPage } = require('../pages/mainpage');
+const { RegisterPage } = require('../pages/registerpage');
+const { LoginPage } = require('../pages/loginpage');
 
 
 test('should sign up with valid credentials', async ({ page }) => {
-  await page.goto('https://www.redmine.org');
-  await page.locator('a[class=register]').click();
-  await page.locator('#user_login').fill('luxequality200');
-  await page.locator('#user_password').fill('Random123');
-  await page.locator('#user_password_confirmation').fill('Random123');
-  await page.locator('#user_firstname').fill('FirstName');
-  await page.locator('#user_lastname').fill('LastName');
-  await page.locator('#user_mail').fill('kewev92273@ktasy.com');
-  await page.locator('input[name=commit]').click();
-  await expect(page.locator('#flash_notice')).toBeVisible();
+    const mainpage = new MainPage(page);
+    const registerpage = new RegisterPage(page);
+    const loginpage = new LoginPage(page);
+    await mainpage.goto();
+    await mainpage.registerButtoClick();
+    await registerpage.register("luxequality02", "Random123", "FirstName", "LastName", "luxeq@luxequality.com");
+    await expect(loginpage.flashNotice).toBeVisible();
 });
