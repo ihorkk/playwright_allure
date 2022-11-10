@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:single": "npx playwright test REDMINEbooks.spec.js",
+    "report:generate": "npx allure generate",
+    "report:open": "npx allure open",
+    "report:clean": "allure generate --clean"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
