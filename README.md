@@ -15,8 +15,6 @@
 3. Enter the following commands to your terminal in the root folder:
       ```bash
        npm install
-       npm init playwright@latest
-       npm i -D @playwright/test allure-playwright
       ```
 
 ## Execute
