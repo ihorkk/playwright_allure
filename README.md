@@ -12,7 +12,7 @@
 
 1. Clone this repository to your local machine
 2. Download node.js (preferable 16.x version)
-3. Enter the following commands to your terminal in the root folder:
+3. Enter the following command to your terminal in the root folder:
       ```bash
        npm install
       ```
