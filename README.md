@@ -3,9 +3,9 @@
 
 ## Requirements
 
-1. node.js
-2. playwright framework
-3. allure reporter
+ - [node.js](https://nodejs.org/)
+ - [Playwright](https://playwright.dev/)
+ - [Allure report](https://docs.qameta.io/allure-report/)
 
 
 ## Setup
@@ -13,23 +13,26 @@
 1. Clone this repository to your local machine
 2. Download node.js (preferable 16.x version)
 3. Enter the following commands to your terminal in the root folder:
-    * npm install
-    * npm init playwright@latest
+      ```bash
+       npm install
+       npm init playwright@latest
+       npm i -D @playwright/test allure-playwright
+      ```
 
 ## Execute
 
 You will find scripts to run the tests in the package.json file:
 
-1. To execute all tests open a terminal and enter:
-    - `test`
-2. To execute specific test enter:
-    - `test:single`
-3. To generate allure report:
-    - `report:generate`
-4. To open generated report in browser:
-    - `report:open`
-5. To clean previous report results:
-    - `report:clean`
+- To execute all tests open a terminal and enter:
+    `test`
+- To execute specific test enter:
+    `test:single`
+- To generate allure report:
+    `report:generate`
+- To open generated report in browser:
+    `report:open`
+- To clean previous report results:
+    `report:clean`
 
 
 ## Project structure
